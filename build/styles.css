@@ -31855,15 +31855,32 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .container {
-  background-image: url("../img/dUyCkp.jpg");
+  background-image: url("../img/bg.jpg");
   background-size: cover;
+  box-sizing: border-box;
+  width: 100%;
+  margin-left: calc(-50vw + 50%);
 }
 
 .panel {
   max-height: 0;
   transition: all 0.3s ease-in;
   overflow: hidden;
+}
+
+@media screen and (min-width: 1536px) {
+  .container {
+    max-width: 2800px;
+  }
 }
 
 @media (min-width: 640px) {
