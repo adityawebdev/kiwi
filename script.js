@@ -1,12 +1,12 @@
 function talk() {
   var know = {
-    "hello":"Hello",
+    hello: "Hello",
     "who are you": "Hello, Kiwi here",
     "how are you": "Good :)",
     "your favourite cricket team": "My favorite cricket team is Mumbai Indians",
-    "ok": "Thank You So Much ",
-    "bye": "Okay! Will meet soon..",
-    "hi": "hello",
+    ok: "Thank You So Much ",
+    bye: "Okay! Will meet soon..",
+    hi: "hello",
 
     "hi, how are you doing?": "i'm fine. how about yourself?",
 
@@ -1571,7 +1571,8 @@ function talk() {
 
     "i'm throwing a party on friday.": "that sounds like fun.",
   };
-  var user = document.getElementById("userBox").value;
+  var user = document.getElementById("userBox").value.toLowerCase();
+
   document.getElementById("chatLog").innerHTML = user + "<br>";
   if (user in know) {
     document.getElementById("chatLog").innerHTML = know[user] + "<br>";

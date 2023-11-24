@@ -18,19 +18,18 @@
         >
           <div class="flex flex-row items-center justify-between p-4">
             <a
-              href="#"
+              href="index.html"
               class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"
               >Kiwi </a
             ><img src="./img/kiwi.png" height="50" width="50" />
           </div>
           <nav
-            :class="{'flex': open, 'hidden': !open}"
-            class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row"
+            class="flex-col flex-grow pb-4 md:pb-0 md:flex md:justify-end md:flex-row"
           >
             <a
               class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
               href="index.html"
-              >Chatbot</a
+              >Home</a
             >
             <a
               class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
@@ -48,8 +47,8 @@
     </div>
   </div>
   <div class="flex justify-center items-center">
-    <div class="bg-gray-100  m-8 rounded-sm w-1/2 p-12">
-      <h1  class="text-3xl font-bold p-2 m-2">Chatbot</h1>
+    <div class="bg-gray-100 m-8 rounded-sm w-1/2 p-12">
+      <h1 class="text-3xl font-bold p-2 m-2">Chatbot</h1>
       <h2 class="text-2xl m-1 p-1">Lets have Some Interaction</h2>
       <div class="input m-1 p-1">
         <input
@@ -57,19 +56,30 @@
           id="userBox"
           onkeydown="if(event.keyCode == 13){ talk()}"
           placeholder="Type your Question"
-          class="text-xl p-2 hover:outline-none hover:border-0"
+          class="text-md p-1 hover:outline-none hover:border-0 w-32"
         />
       </div>
-      <p id="chatLog" class="text-xl m-1 p-1">Answer Appering Hear</p>
+      <p id="chatLog" class="text-md m-1 p-1">Answer Appering Hear</p>
     </div>
   </div>
-  <blockquote class="text-xl italic font-semibold text-gray-900 dark:text-white w-screen text-center my-2">
+  <blockquote
+    class="text-xl italic font-semibold text-gray-900 dark:text-white w-screen text-center my-2"
+  >
     <p>"Even the worst depressive episodes won’t last forever."</p>
-</blockquote>
-<blockquote class="text-xl italic font-semibold text-gray-900 dark:text-white w-screen text-center my-2">
-  <p>"Be proud of who you are, instead of ashamed of how someone else sees you."</p>
-</blockquote>
-<blockquote class="text-xl italic font-semibold text-gray-900 dark:text-white w-screen text-center my-2">
-  <p>"When your depression says, “Give up”, hope whispers, “Try one more time."</p>
-</blockquote>
+  </blockquote>
+  <blockquote
+    class="text-xl italic font-semibold text-gray-900 dark:text-white w-screen text-center my-2"
+  >
+    <p>
+      "Be proud of who you are, instead of ashamed of how someone else sees
+      you."
+    </p>
+  </blockquote>
+  <blockquote
+    class="text-xl italic font-semibold text-gray-900 dark:text-white w-screen text-center my-2"
+  >
+    <p>
+      "When your depression says, “Give up”, hope whispers, “Try one more time."
+    </p>
+  </blockquote>
 </html>
